@@ -1,0 +1,23 @@
+﻿# Android build outputs
+/build/
+/dist/
+*.apk
+*.aab
+*.dex
+*.class
+
+# Android signing credentials
+*.keystore
+*.jks
+*.key
+
+# Local configuration
+local.properties
+.env
+.env.*
+
+# IDE and temporary files
+.vscode/
+.gradle/
+*.log
+*.tmp
