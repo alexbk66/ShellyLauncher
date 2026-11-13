@@ -80,6 +80,12 @@ Invoke-Checked $javac @('-encoding', 'UTF-8', '-d', $testClasses,
     (Join-Path $root 'tests/com/ak/shellylauncher/HelperLogThrottleTest.java'))
 Invoke-Checked $java @('-cp', $testClasses, 'com.ak.shellylauncher.UpdatePromptReasonTest')
 Invoke-Checked $java @('-cp', $testClasses, 'com.ak.shellylauncher.HelperLogThrottleTest')
+Write-Host 'Testing launcher shortcut window transitions...'
+Invoke-Checked $javac @('-encoding', 'UTF-8', '-d', $testClasses,
+    (Join-Path $sourceRoot 'LauncherShortcutPolicy.java'),
+    (Join-Path $root 'tests/com/ak/shellylauncher/LauncherShortcutPolicyTest.java'))
+Invoke-Checked $java @('-cp', $testClasses, 'com.ak.shellylauncher.LauncherShortcutPolicyTest')
+
 Write-Host 'Compiling against Android API 27...'
 $sources = @(Get-ChildItem -LiteralPath (Join-Path $root 'src') -Recurse -Filter '*.java' |
     Sort-Object FullName | ForEach-Object { $_.FullName })

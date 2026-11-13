@@ -2,4 +2,6 @@
 <resources>
     <string name="update_helper_label">Shelly update prompt helper</string>
     <string name="update_helper_description">Dismisses only the recognized English Shelly Smart Control update prompt by pressing Not now. It reads Shelly screen content while enabled but never saves or transmits it. Changed or unrecognized dialogs are left open. Enable only if you want this optional behavior.</string>
+    <string name="launcher_shortcut_label">Shelly floating navigation</string>
+    <string name="launcher_shortcut_description">Shows a draggable navigation icon over Shelly. Tap to expand Back, Shelly Launcher and Recent apps. Drag the handle to move it. Controls collapse automatically and hide when other app windows open. Android Settings is available in Shelly Launcher. This service observes window package metadata but does not read, save or transmit screen content. After enabling, return to Shelly to show the icon.</string>
 </resources>
