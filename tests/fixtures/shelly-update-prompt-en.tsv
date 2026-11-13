@@ -1,0 +1,73 @@
+-1	cloud.shelly.smartcontrol	android.widget.FrameLayout	true	true	false		
+0	cloud.shelly.smartcontrol	android.widget.LinearLayout	true	true	false		
+0	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+1	cloud.shelly.smartcontrol	android.widget.FrameLayout	true	true	false		
+3	cloud.shelly.smartcontrol	android.widget.LinearLayout	true	true	false		
+4	cloud.shelly.smartcontrol	android.widget.FrameLayout	true	true	false		
+5	cloud.shelly.smartcontrol	android.view.ViewGroup	true	true	false		
+6	cloud.shelly.smartcontrol	android.widget.LinearLayout	true	true	false		
+7	cloud.shelly.smartcontrol	android.webkit.WebView	true	true	false		
+8	cloud.shelly.smartcontrol	android.webkit.WebView	true	true	false	<redacted>	
+9	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+9	cloud.shelly.smartcontrol	android.widget.TextView	true	true	false	<redacted>	
+9	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+9	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+12	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+12	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+13	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+14	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+15	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+16	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+16	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+16	cloud.shelly.smartcontrol	android.widget.Button	true	true	true	Not now	
+16	cloud.shelly.smartcontrol	android.widget.Button	true	true	true	Go to Store	
+17	cloud.shelly.smartcontrol	android.widget.TextView	true	true	false	<redacted>	
+17	cloud.shelly.smartcontrol	android.widget.Button	true	true	true	<redacted>	
+17	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+18	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+18	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+19	cloud.shelly.smartcontrol	android.widget.TextView	true	true	false	Update Shelly Smart Control	
+20	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+25	cloud.shelly.smartcontrol	android.widget.Button	true	true	true	<redacted>	
+26	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+27	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+27	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+29	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+31	cloud.shelly.smartcontrol	android.widget.Button	true	true	true		
+31	cloud.shelly.smartcontrol	android.widget.Button	true	true	true		
+31	cloud.shelly.smartcontrol	android.widget.Button	true	true	true		
+31	cloud.shelly.smartcontrol	android.widget.Button	true	true	true		
+31	cloud.shelly.smartcontrol	android.widget.Button	true	true	true		
+31	cloud.shelly.smartcontrol	android.widget.Button	true	true	true		
+32	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+32	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+33	cloud.shelly.smartcontrol	android.widget.Button	true	true	true		
+33	cloud.shelly.smartcontrol	android.widget.TextView	true	true	false	<redacted>	
+33	cloud.shelly.smartcontrol	android.widget.TextView	true	true	false	<redacted>	
+33	cloud.shelly.smartcontrol	android.widget.Button	true	true	true		
+33	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+33	cloud.shelly.smartcontrol	android.widget.TextView	true	true	false	<redacted>	
+34	cloud.shelly.smartcontrol	android.widget.TextView	true	true	false	A new version of Shelly Smart Control is available, including important security enhancements, performance optimizations, and stability improvements. Update the app from your store to ensure the best and most secure experience.	
+41	cloud.shelly.smartcontrol	android.widget.Button	true	true	true	<redacted>	
+41	cloud.shelly.smartcontrol	android.view.View	true	true	false	<redacted>	
+41	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+42	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+47	cloud.shelly.smartcontrol	android.widget.TextView	true	true	false	<redacted>	
+51	cloud.shelly.smartcontrol	android.widget.ListView	true	true	false		
+52	cloud.shelly.smartcontrol	android.widget.Button	true	true	true	<redacted>	
+53	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+55	cloud.shelly.smartcontrol	android.view.View	true	true	false	<redacted>	
+57	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+57	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+59	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+60	cloud.shelly.smartcontrol	android.view.View	true	true	false		
+61	cloud.shelly.smartcontrol	android.widget.ListView	true	false	false	<redacted>	
+62	cloud.shelly.smartcontrol	android.widget.ListView	true	false	false	<redacted>	
+63	cloud.shelly.smartcontrol	android.view.View	true	false	false	<redacted>	
+63	cloud.shelly.smartcontrol	android.view.View	true	false	false	<redacted>	
+63	cloud.shelly.smartcontrol	android.view.View	true	false	false	<redacted>	
+64	cloud.shelly.smartcontrol	android.view.View	true	false	false	<redacted>	
+65	cloud.shelly.smartcontrol	android.widget.Button	true	false	true	<redacted>	
+66	cloud.shelly.smartcontrol	android.widget.Button	true	false	true	<redacted>	
+67	cloud.shelly.smartcontrol	android.widget.Button	true	false	true	<redacted>	
+68	cloud.shelly.smartcontrol	android.widget.Button	true	false	true	<redacted>	

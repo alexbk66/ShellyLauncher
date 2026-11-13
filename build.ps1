@@ -55,7 +55,31 @@ Invoke-Checked $javac @('-encoding', 'UTF-8', '-d', $testClasses,
     (Join-Path $sourceRoot 'AutoLaunchPolicy.java'),
     (Join-Path $root 'tests/com/ak/shellylauncher/AutoLaunchPolicyTest.java'))
 Invoke-Checked $java @('-cp', $testClasses, 'com.ak.shellylauncher.AutoLaunchPolicyTest')
-
+Write-Host 'Testing strict update-prompt matching...'
+Invoke-Checked $javac @('-encoding', 'UTF-8', '-d', $testClasses,
+    (Join-Path $sourceRoot 'UpdatePromptPolicy.java'),
+    (Join-Path $root 'tests/com/ak/shellylauncher/UpdatePromptPolicyTest.java'))
+Invoke-Checked $java @('-cp', $testClasses, 'com.ak.shellylauncher.UpdatePromptPolicyTest',
+    (Join-Path $root 'tests/fixtures/shelly-update-prompt-en.tsv'))
+Write-Host 'Testing bounded accessibility startup retries...'
+Invoke-Checked $javac @('-encoding', 'UTF-8', '-d', $testClasses,
+    (Join-Path $sourceRoot 'UpdateInspectionRetryPolicy.java'),
+    (Join-Path $root 'tests/com/ak/shellylauncher/UpdateInspectionRetryPolicyTest.java'))
+Invoke-Checked $java @('-cp', $testClasses, 'com.ak.shellylauncher.UpdateInspectionRetryPolicyTest')
+Write-Host 'Testing popup-diagnostics privacy...'
+Invoke-Checked $javac @('-encoding', 'UTF-8', '-d', $testClasses,
+    (Join-Path $sourceRoot 'UpdatePromptPolicy.java'),
+    (Join-Path $sourceRoot 'UpdateInspectionDiagnostics.java'),
+    (Join-Path $root 'tests/com/ak/shellylauncher/UpdateInspectionDiagnosticsTest.java'))
+Invoke-Checked $java @('-cp', $testClasses, 'com.ak.shellylauncher.UpdateInspectionDiagnosticsTest')
+Write-Host 'Testing fixed matching reasons and diagnostic throttling...'
+Invoke-Checked $javac @('-encoding', 'UTF-8', '-d', $testClasses,
+    (Join-Path $sourceRoot 'UpdatePromptPolicy.java'),
+    (Join-Path $root 'tests/com/ak/shellylauncher/UpdatePromptReasonTest.java'),
+    (Join-Path $sourceRoot 'HelperLogThrottle.java'),
+    (Join-Path $root 'tests/com/ak/shellylauncher/HelperLogThrottleTest.java'))
+Invoke-Checked $java @('-cp', $testClasses, 'com.ak.shellylauncher.UpdatePromptReasonTest')
+Invoke-Checked $java @('-cp', $testClasses, 'com.ak.shellylauncher.HelperLogThrottleTest')
 Write-Host 'Compiling against Android API 27...'
 $sources = @(Get-ChildItem -LiteralPath (Join-Path $root 'src') -Recurse -Filter '*.java' |
     Sort-Object FullName | ForEach-Object { $_.FullName })
@@ -70,7 +94,7 @@ Write-Host 'Packaging and aligning...'
 $unsigned = Join-Path $work 'unsigned.apk'
 $aligned = Join-Path $work 'aligned.apk'
 Invoke-Checked $aapt @('package', '-f', '-M', (Join-Path $root 'AndroidManifest.xml'),
-    '-I', $androidJar, '-F', $unsigned)
+    '-S', (Join-Path $root 'res'), '-I', $androidJar, '-F', $unsigned)
 Push-Location $dex
 try { Invoke-Checked $aapt @('add', $unsigned, 'classes.dex') }
 finally { Pop-Location }

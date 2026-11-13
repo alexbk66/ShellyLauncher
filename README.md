@@ -51,3 +51,13 @@ returning HOME and exiting/crashing Shelly do not loop; the button retries;
 missing/disabled Shelly shows fallback; reboot allows one new attempt; and
 launcher process recreation does not reset the guard. These runtime cases have
 not been validated by local compilation or the JVM policy tests.
+
+## Optional update prompt helper
+
+An opt-in accessibility service dismisses only the exact English Shelly update
+popup using strict title/body/button/container checks. Bounded startup retries
+handle unavailable trees; diagnostics use throttled fixed reasons and counters,
+never screen content or credentials. Enablement is separate from building.
+See [the investigation](docs/shelly-update-investigation.md),
+[logging](docs/update-helper-logging.md) and
+[device validation](docs/restart-validation.md).

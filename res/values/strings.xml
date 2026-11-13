@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_helper_label">Shelly update prompt helper</string>
+    <string name="update_helper_description">Dismisses only the recognized English Shelly Smart Control update prompt by pressing Not now. It reads Shelly screen content while enabled but never saves or transmits it. Changed or unrecognized dialogs are left open. Enable only if you want this optional behavior.</string>
+</resources>
